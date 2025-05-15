@@ -263,3 +263,171 @@ h1 {
     font-style: normal;
     font-size: 28px;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-form-login {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.login-image-side {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image-side img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.login-form-side {
+    flex: 1;
+    background-color: #C0F2AC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    flex-direction: column; /* ← ESSENCIAL */
+}
+
+.form-login-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login-wrapper .tittle-form {
+    text-align: center;
+    font-family: "Tuffy", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.navClean {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: "Tuffy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000; /* Pode mudar conforme o contraste desejado */
+}
+
+.content-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.image-text {
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-size: 24px;
+    color: #000000;
+    max-width: 80%;
+}
+
+/* Estilização dos inputs */
+.email-box-input,
+.nome-box-input,
+.sobrenome-box-input,
+.password-box-input {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Work Sans", sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.email-box-input::placeholder,
+.nome-box-input::placeholder,
+.sobrenome-box-input::placeholder,
+.password-box-input::placeholder {
+    color: #888888;
+    opacity: 0.8;
+}
+
+.email-box-input:focus,
+.nome-box-input:focus,
+.sobrenome-box-input:focus,
+.password-box-input:focus {
+    outline: none;
+    border-color: #333333;
+    box-shadow: 0 0 8px #333333;
+}
+
+/* Estilização do botão de login */
+.login-box-button,
+.preCadastro-box-button {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 14px;
+    width: 100%;
+    background-color: #000000;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-box-button:hover,
+.preCadastro-box-button:hover {
+    background-color: #000000; /* cinza escuro */
+    box-shadow: 0 0 8px #000000;
+    color: #ffffff;
+    font-weight: 400;
+    border: 2px solid #ffffff;
+}
+
+.login-box-button:active,
+.preCadastro-box-button {
+    transform: scale(0.98);
+}
+
+.text-form {
+    font-family: "Tuffy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.tittle-form {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
