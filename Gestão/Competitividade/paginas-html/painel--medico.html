@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paciente Dashboard</title>
+    <link rel="stylesheet" href="/Competitividade/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>VivaSUS</h1>
+        <input type="date">
+    </header>
+
+    <div class="container-dashboard">
+        <div class="card profile-section">
+            <div class="info">
+                <div><strong>Nome:</strong> Juana</div>
+                <div><strong>Sexo:</strong> Female</div>
+                <div><strong>Idade:</strong> 24</div>
+                <div><strong>Tipo Sanguíneo:</strong> O+</div>
+                <div><strong>Doutor:</strong> Dr. Elina</div>
+                <div><strong>Última consulta:</strong> 28/08/2024</div>
+                <div><strong>Póxima consulta:</strong> 08/09/2024</div>
+            </div>
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Patient Photo">
+        </div>
+
+        <div class="card">
+            <h2>Visits</h2>
+            <p><strong>Consulting Doctor:</strong> Dr. Hector</p>
+            <p><strong>Date:</strong> 20/05/2024</p>
+            <p><strong>Department:</strong> Orthopaedics</p>
+            <p><strong>Fee Paid:</strong> $200</p>
+            <p><strong>Prescription:</strong> The prescriptions featured in the dataset exhibit illegible handwriting, commonly encountered in medical practices.</p>
+            <p><strong>Reports:</strong> Weight: 48lbs | Blood Pressure: 120 | Sugar Before: 90 | Sugar After: 180</p>
+            <button class="button">View Reports</button>
+        </div>
+
+        <div class="card chart-container">
+            <h2>Blood Pressure Trend</h2>
+            <canvas id="bpChart"></canvas>
+        </div>
+
+        <div class="card chart-container">
+            <h2>Sugar Level Comparison</h2>
+            <canvas id="sugarChart"></canvas>
+        </div>
+    </div>
+
+    <script src="/Competitividade/script.js"></script>
+</body>
+</html>
